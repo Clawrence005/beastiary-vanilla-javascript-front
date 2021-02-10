@@ -1,0 +1,85 @@
+body{
+  background-color: #222222;
+}
+h1{
+  color: #efefef;
+}
+.sideNav {
+  height: 100%;
+  width:0;
+  position:fixed;
+  z-index: 1;
+  top:0;
+  left:0;
+  background-color: brown;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sideNav a{
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 25px;
+color: green;
+display: block;
+transition: 0.3s;
+}
+.sideNav a:hover{
+  color: purple;
+}
+.sideNav .closeBtn{
+  position:absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#main{
+  border:3px solid red;
+  transition: margin-left .5s;
+  padding: 16px;
+}
+.circle{
+  border:3px solid red;
+  height: 50px;  
+  width: 50px;
+  border-radius: 50px
+}
+.circle:hover{
+  border:3px solid green;
+}
+.circle-nav:hover{
+  border:3px solid blue;
+}
+#outer-half-circle{
+  border:3px solid yellowgreen;
+  height: 470px;  
+  width: 470px;
+  border-radius: 50%;
+  position: absolute;
+  left:-260px;
+}
+#inner-half-circle{
+  position: relative;
+  right:-70px;
+  top: 53px;
+  z-index: 2;
+  border:3px solid pink;
+  height: 350px;  
+  width: 350px;
+  border-radius: 50%;
+}
+.habitat-pic{
+  
+  height: 350px;  
+  width: 350px;
+  z-index: 3;
+}
+@media screen and (max-height: 450px){
+  .sideNav{
+    padding-top: 15px;
+  }
+  .sideNav a {
+    font-size: 18px
+  }
+}
